@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Feb  9 19:06:13 2019
+
+@author: venuswong
+"""
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Flask_Chat_App</title>
+  </head>
+  <body>
+
+    <h3> <font color= "#0000ee";size ="40px">You Ask,</font><font color="#ff7700";size ="40px"> I Answer!</font></h3>
+    <div class="message_holder"></div>
+
+    <form action="QA" method="POST">
+      <input type="text" class="username" placeholder="Type Your ID Here" name="idfield"/>
+      <textarea rows="4" cols="50" class="message" placeholder="Tpye Your Question Here" name="input_question"></textarea>
+      <input type="submit" value="click here"/>
+    </form>
+    
+    <table style="width: 100%">
+            <tr>
+               <th>  😀:{{input_question}} </th>
+               <td> 👩: {{response_spacy}} </td>
+            </tr>
+      </table>
+   </body>
+</html>
